@@ -1,22 +1,22 @@
-// function primesum(n) {
-//     if (n == 0 || n == 1) {
-//         return false;
-//     }
-//     let sq = Math.sqrt(n);
-//     for (let i = 2; i <= n; i++) {
-//         if (n % 2 == 0) {
-//             return "Not a Prime";
-//         } else if (n % sq == 0) {
-//             return "Not a Prime";
-//         } else {
-//             return "It's Prime";
-//         }
-//     }
-// }
-// console.log(primesum(7));
+function primesum(n) {
+    if (n == 0 || n == 1) {
+        return false;
+    }
+    let sq = Math.sqrt(n);
+    for (let i = 2; i <= n; i++) {
+        if (n % 2 == 0) {
+            return "Not a Prime";
+        } else if (n % sq == 0) {
+            return "Not a Prime";
+        } else {
+            return "It's Prime";
+        }
+    }
+}
+console.log(primesum(7));
 
 function printAllPrimeNumber(n) {
-    let pArr = [];
+    let PrimeArray = [];
     if (n == 0 || n == 1) console.log("false");
     for (let i = 2; i <= n; i++) {
         let occor = 0;
@@ -29,9 +29,9 @@ function printAllPrimeNumber(n) {
         }
         if (i > 1 && occor == 0) {
             // console.log(i);
-            pArr.push(i);
+            PrimeArray.push(i);
         }
     }
-    console.log(pArr);
+    console.log(PrimeArray);
 }
 printAllPrimeNumber(37);
